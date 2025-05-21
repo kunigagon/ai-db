@@ -1,0 +1,13 @@
+python -m venv venv 
+source venv/bin/activate
+
+pip install langchain langchain-community langchain-core sqlalchemy mysql-connector-python python-dotenv
+
+
+#start llm
+ollama run llama3
+ollama run mistral
+
+
+#atrat app
+python main.py

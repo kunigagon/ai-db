@@ -1,0 +1,31 @@
+# 🧠 LangChain + Ollama + MySQL (MCP POC)
+
+This is a Python proof-of-concept showing how to build an **AI Agent with LangChain**, powered by **Ollama** and a **MySQL database**, using **Model Context Protocol (MCP)**.
+
+## ✅ Features
+
+- Query MySQL with natural language
+- Powered by LangChain MCP and ChatOllama
+- Auto-selects tools (SQL)
+- Structured and extendable
+
+## 🛠️ Setup
+
+### 1. Install requirements
+
+python -m venv venv 
+source venv/bin/activate
+
+```bash
+pip install -r requirements.txt
+
+
+pip install langchain  langchain-core sqlalchemy mysql-connector-python python-dotenv langchain-community python-dotenv
+#start llm
+ollama run llama3
+ollama run mistral
+
+
+#atrat app
+python main.py
+

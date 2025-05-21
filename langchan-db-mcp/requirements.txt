@@ -1,0 +1,6 @@
+langchain>=0.3.12
+langchain-core>=0.2.0
+langchain-community
+langchain-ollama
+python-dotenv
+mysql-connector-python
