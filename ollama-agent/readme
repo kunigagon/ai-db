@@ -11,3 +11,15 @@ ollama run mistral
 
 #atrat app
 python main.py
+
+
+docker run -d \
+  --name mysql_local \
+  -e MYSQL_ROOT_PASSWORD=rootpassword \
+  -e MYSQL_DATABASE=testdb \
+  -e MYSQL_USER=db-service \
+  -e MYSQL_PASSWORD=Passw0rd \
+  -p 3306:3306 \
+  -v mysql_data:/var/lib/mysql \
+  --network onket_network \
+  my-mysql
